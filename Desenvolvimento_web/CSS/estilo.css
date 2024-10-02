@@ -1,0 +1,57 @@
+h1{
+    color: blue;
+    font-weight: normal;
+    font-family: Roboto, Helvetica;
+}
+p{
+    font-size: 20px;
+}
+
+section p strong {
+    color: yellow;
+}
+
+strong em{
+    font-size: 26px;
+}
+strong{
+    color: green;
+}
+body{
+    background-color: rgba(240, 123, 220, 0.705);
+}
+
+#titulo{
+    text-align: center;
+}
+
+.btn{
+    font-size: 16px;
+    padding: 10px; /* espaço entre o elemento dentro do box*/
+    border-radius: 20px; /* bordas aredondadas*/
+}
+.btn-azul {
+    background-color: blue;
+    color: white;
+}
+
+.btn-azul:hover{ /* Hover aplica um evento quando passa o mouse*/
+    background-color: aqua;
+    cursor: pointer;
+}
+
+input:required{
+    border-color: red;
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.circulo p {
+    margin: 10px;
+}

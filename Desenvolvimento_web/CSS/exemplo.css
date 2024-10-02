@@ -1,0 +1,12 @@
+h1{
+    color: tomato;
+    font-weight: normal; /* espeçura da fonte*/
+    font-family: arial;    
+}
+p{
+    font-size: 16px;
+}
+
+section P {
+    color: blueviolet;
+}
