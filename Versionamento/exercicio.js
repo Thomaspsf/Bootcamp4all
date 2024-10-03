@@ -11,4 +11,4 @@ some(10,20);
 // git config user.name "Thomaspsf"
 // git add .
 // git commit -m "descricao do seu codigo"
-// git push origin main.
+// git push origin main
