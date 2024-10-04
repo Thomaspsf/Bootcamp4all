@@ -85,4 +85,112 @@ console.log(pos)
 
 
 // usando uma função
+let teste = [10, 9, 10, 1, 2, 3, 4, 5, 6]
+const nums = [-10, 2, 100, -1, 40, -2, 0]
+
+let qtdNumsNegativos = 0
+let soma3 = 0
+for (let i = 0; i < nums.length; i++) {
+    const num = nums[i]
+    if (num < 0) {
+        qtdNumsNegativos++
+    } else {
+        soma3 += num
+    }
+}
+
+console.log("Soma dos numeros positivos é:", soma3)
+console.log("qtd dos numeros negativos é:", qtdNumsNegativos)
+
+const nums2 = [10, 34, 78, 3, 7, 10, 2, 90, 9, 0]
+
+const n = 9
+let pos23 = -1
+for (let i = 0; i < nums2.length; i++) {
+    if (nums2[i] === n) pos23 = i
+}
+console.log(pos23)
+
+const findIndex = (arr, n) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === n) return i
+    }
+    return -1
+}
+console.log(findIndex(nums2, 100))
+
+const ehImpar = (value) => value % 2 !== 0
+const pos2 = nums2.findIndex(ehImpar)
+console.log(pos2)
+
+const findIndex2 = (arr, ehOValorEsperado) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (ehOValorEsperado(arr[i])) return i
+    }
+    return -1
+}
+
+console.log(findIndex2(nums2, ehImpar))
+
+//encontrar a posisão dentro de um array
+
+
+
+
+
+//forEach
+
+console.log("ForEach:")
+let soma4 = 0
+teste.forEach((value) => {
+    soma4 += value
+})
+console.log(soma4)
+
+const teste2 = teste.map((value) => {
+    return value + 2
+})
+console.log(teste)
+console.log(teste2)
+
+const media2 = [10, 4, 6, 7, 3]
+
+const foiAprovado = (media2) => {
+    if (media2 >= 6) return true
+    else return false
+}
+
+const aprovados = media2.map(foiAprovado)
+console.log(media2)
+console.log(aprovados)
+
+for (let i = 0; i < media2.length; i++) {
+    const aprovado = foiAprovado(media2[i])
+    console.log(aprovado)
+}
+
+
+// multiplique todos os elementos de uma array por 2
+
+const novoMedia = media2.map((value) => {
+   return value * 2
+})
+
+console.log(novoMedia);
+
+// transformar um array de numeros em um array de seus quadrado
+
+const novoMedia2 = media2.map((value) => {
+    return value * value
+ })
+ 
+ console.log(novoMedia2);
+
+ // Encontrar o primeiro número par em um array
+
+ const ehpar = (value) => {return value % 2 == 0}
+const posisao = media2.findIndex(ehpar)
+
+console.log(media2[posisao]);
+
 
