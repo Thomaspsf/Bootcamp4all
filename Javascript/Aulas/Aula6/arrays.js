@@ -188,9 +188,45 @@ const novoMedia2 = media2.map((value) => {
 
  // Encontrar o primeiro número par em um array
 
- const ehpar = (value) => {return value % 2 == 0}
+const ehpar = (value) => {return value % 2 == 0}
 const posisao = media2.findIndex(ehpar)
 
 console.log(media2[posisao]);
 
+const soImpar =[]
+media2.forEach(element => {
+        if (element % 2 !== 0) {
+            soImpar.push(element)
+        }
+    });
+console.log(soImpar);
+
+//função "Filter" filtra um array baseada no parametro que passar se for verdadeiro ele mantem no array se não ele tira
+
+arraySoImpar = media2.filter((value) => value % 2 !== 0) 
+console.log(arraySoImpar);
+
+
+// verificar se todos os numero em um array são positivos
+let ver = true
+teste.forEach(element => {
+    if (element < 0) {
+        ver = false
+    }
+});
+console.log(ver);
+
+// usando função
+
+const todosPositivos = (arr) => {
+    for (let i = 0; i < arr.length; i++){
+        const elementos2 = arr[i]
+        if (elementos2 < 0) return false
+    }
+    return true
+}
+
+console.log(todosPositivos(nums));
+
+// usando função "every" Verifica todos os elementos de uma condição passada pra ele
 
