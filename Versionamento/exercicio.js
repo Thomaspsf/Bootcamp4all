@@ -12,3 +12,5 @@ some(10,20);
 // git add .
 // git commit -m "descricao do seu codigo"
 // git push origin main
+// git checkout nomebranch -- trocar de branch que ja existe
+// git checkout -b nomebranch -- cria uma nova branch
