@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+}
+
+.quadro1 {
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    
+}
+
+.quadro2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 44, 218);
+    
+}
+
